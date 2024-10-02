@@ -3,62 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-    <script src="https://kit.fontawesome.com/5d49d6f116.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Previous Button -->
-    <button id="prev-btn">
-        <i class="fa-solid fa-arrow-left"></i>
-    </button>
-    <!-- Book -->
-    <div id="book" class="book">
-        <!-- Paper1 -->
-        <div id="p1" class="paper">
-            <div class="front">
-                <div id="f1" class="front-content">
-                    <h1>Front 1</h1>
-                </div>
-            </div>
-            <div class="back">
-                <div id="b1" class="back-content">
-                    <h1>Back 1</h1>
-                </div>
-            </div>
-        </div>
-        <!-- Paper2 -->
-        <div id="p2" class="paper">
-            <div class="front">
-                <div id="f2" class="front-content">
-                    <h1>Front 2</h1>
-                </div>
-            </div>
-            <div class="back">
-                <div id="b2" class="back-content">
-                    <h1>Back 2</h1>
-                </div>
-            </div>
-        </div>
-        <!-- Paper3 -->
-        <div id="p3" class="paper">
-            <div class="front">
-                <div id="f3" class="front-content">
-                    <h1>Front 3</h1>
-                </div>
-            </div>
-            <div class="back">
-                <div id="b3" class="back-content">
-                    <h1>Back 3</h1>
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right turn"></div>
+
+        <div class="book">
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="Untitled.jpg">
+                    <h1>Arnav Agarwal</h1>
+                    <h3>Student</h3>
+
+                    <div class="social-media">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+
+                    <p>Hi, I'm Arnav Agarwal, a student. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nam, quod earum aliquid a quaerat! Non officiis quod ipsa, id, atque distinctio quo quos, praesentium provident eius voluptatibus placeat odio?</p>
+
+                    <div class="btn-box">
+                        <a href="#" class="btn">Download CV</a>
+                        <a href="#" class="btn contact">Contact Me</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Next Button -->
-    <button id="next-btn">
-        <i class="fa-solid fa-arrow-right"></i>
-    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
 </body>
 </html>
-<!-- Completed -->
