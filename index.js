@@ -63,3 +63,31 @@ backProfileBtn.onclick = () => {
 }
 
 // opening Animation
+const coverRight = document.querySelector('.cover.cover-right');
+const pageLeft = document.querySelector('.book-page.page-left');
+
+// opening animation (right cover)
+setTimeout(() => {
+    coverRight.classList.add('turn');
+}, 2100)
+
+setTimeout(() => {
+    coverRight.style.zIndex = -1;
+}, 2800)
+
+// opening animation (all left pages)
+setTimeout(() => {
+    pageLeft.style.zIndex = 20;
+}, 3200)
+
+// opening animation (all right pages)
+pages.forEach((_, index) => {
+    setTimeout(() => {
+        reverseIndex();
+        pages[pageNumber].classList.remove('turn');
+        setTimeout(() => {
+            reverseIndex();
+            pages[pageNumber].style.zIndex= 10 + index;
+        }, 500)
+    }, (index+1)*200+2100)
+})
